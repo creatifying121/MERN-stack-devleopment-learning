@@ -1,0 +1,189 @@
+<!-- table creation -->
+<!-- <table>
+    <tr>
+        <td>hello</td>
+        <td>hi</td>
+    </tr>
+
+    <tr>
+        <td>heyyy</td>
+        <td>how r u</td>
+    </tr>
+</table> -->
+
+<!-- table generation by using emmet abbreviation -->
+
+<!-- command used : table>(tr>td*3)*3
+
+    description: This is because of emmet abbreviations; we will discuss it further in detail. But the meaning of above expression is, “table>” create a table and move inside it, then “(tr>” create a table row, and move inside it to fill in the data and then “td*3” means, we will work with three columns and finally “)*3” this means, we need 3 such rows with 3 columns inside it. 
+-->
+<!-- <table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table> -->
+
+<!-- formatting tags -->
+
+<!-- <p>
+    Lorem <b>ipsum</b> dolor, <i>sit</i> amet <em>consectetur</em> adipisicing <u>elit</u>. Dolores eaque vitae odit nihil deleniti, iusto accusantium labore? Voluptas eos pariatur labore magnam quod autem dolorem reiciendis, <s>asperiores error sint esse</s>.
+</p> -->
+
+<!-- superscript and subscript -->
+
+<!-- <p>
+    2<sup>5</sup>
+
+    O<sub>2</sub>
+</p> -->
+
+<!-- pre tag -->
+<!-- <pre>Hello I am Shivani</pre>
+
+<pre>
+    Hello 
+    I am
+    Shivani
+</pre> -->
+
+<!-- emmet abbreviations -->
+
+<!-- nesting -->
+
+<!-- img tag inside paragraph tag : p>img (hit enter) -->
+<!-- <p><img src="" alt=""></p> -->
+
+<!-- multiple p tags inside p tag : p>p>p>p -->
+<!-- <p>
+    <p>
+        <p>
+            <p></p>
+        </p>
+    </p>
+</p> -->
+
+<!-- tag after another tag : p+article+section+img -->
+<!-- <p></p>
+<article></article>
+<section></section>
+<img src="" alt=""> -->
+
+<!-- content inside a tag : p{this is my first para} -->
+<!-- <p>this is my first para</p> -->
+
+<!-- lorem text inside p tag : p>lorem20 -->
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium non delectus consequatur consectetur. Voluptate laboriosam eaque excepturi officia commodi obcaecati.</p> -->
+
+<!-- class and id along with any tag 
+    1. for class syntax is "tag.className" => p.firstPara
+    2. for id syntax is "tag#idName" => article#articleOne
+-->
+<!-- <p class="firstPara"></p>
+<article id="articleOne"></article> -->
+
+<!-- for multiple classes => p.className1.className2.className3. ... classNameN-->
+<!-- <p class="dog cat elephant cheeti"></p> -->
+
+<!-- trying to achieve multiple ids: p#id1#id2#id3 => it will take the last id name entered i.e., id3 -->
+<!-- <p id="id3"></p> -->
+ 
+<!-- div example -->
+<!-- <div>
+    <article>
+        <p></p>
+        <p></p>
+    </article>
+    <section>
+        <p></p>
+    </section>
+</div> -->
+
+<!-- inline vs block elements -->
+<!-- <div style="background-color: khaki;">
+    my first div
+</div>
+<div style="background-color: burlywood; display: inline;">
+    my second div
+</div>
+
+<span style="background-color: aquamarine;">
+    my first span
+</span>
+<span style="background-color: aqua; display: block;" >
+    my second span
+</span> -->
+
+<!-- lists and complexities -->
+<!-- 1. creating an unordered list with 4 list items => ul>(li*4) -->
+<!-- <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul> -->
+
+<!-- 2. creating an unordered list with 4 list items consisting of a p tag inside them => ul>(li>p)*4 -->
+<!-- <ul>
+    <li>
+        <p></p>
+    </li>
+    <li>
+        <p></p>
+    </li>
+    <li>
+        <p></p>
+    </li>
+    <li>
+        <p></p>
+    </li>
+</ul> -->
+
+<!-- 3. creating an unordered list with 4 list items, but this time they consist of anchor tags +> ul>(li>a)*4 -->
+<!-- <ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul> -->
+
+<!-- 4. creating a nav bar using this, so we need 4 items in the nav bar, and each should be a hyperlink. => nav>ul>(li>a)*4 -->
+<!-- 
+    Variations: 
+
+    to remove the bullet points => list-style-type: none
+    to align list items side-by-side, we are using display: inline
+-->
+<!-- <nav>
+    <ul style="list-style-type: none;">  
+        <li style="display: inline;"><a href="">Home</a></li> 
+        <li style="display: inline;"><a href="">About us</a></li>
+        <li style="display: inline;"><a href="">Contact</a></li>
+        <li style="display: inline;"><a href="">Login</li>
+    </ul>
+</nav> -->
+
+<!-- creating bookmark using anchor tag -->
+
+    <!-- <a href="#fourthPara">jump to fourth para</a>
+
+    <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid at aperiam voluptates ipsa eveniet, consequatur aut placeat vitae deserunt explicabo tempore repellendus recusandae eius? Tempore minima dolores accusantium modi beatae harum neque aliquid corrupti doloremque doloribus maxime architecto, veniam sit deserunt enim atque quam fuga molestias! Et, vero modi. </p>
+    <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid at aperiam voluptates ipsa eveniet, consequatur aut placeat vitae deserunt explicabo tempore repellendus recusandae eius? Tempore minima dolores accusantium modi beatae harum neque aliquid corrupti doloremque doloribus maxime architecto, veniam sit deserunt enim atque quam fuga molestias! Et, vero modi. </p>
+    <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid at aperiam voluptates ipsa eveniet, consequatur aut placeat vitae deserunt explicabo tempore repellendus recusandae eius? Tempore minima dolores accusantium modi beatae harum neque aliquid corrupti doloremque doloribus maxime architecto, veniam sit deserunt enim atque quam fuga molestias! Et, vero modi. </p>
+    <p id="fourthPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid at aperiam voluptates ipsa eveniet, consequatur aut placeat vitae deserunt explicabo tempore repellendus recusandae eius? Tempore minima dolores accusantium modi beatae harum neque aliquid corrupti doloremque doloribus maxime architecto, veniam sit deserunt enim atque quam fuga molestias! Et, vero modi. </p> -->
+
+<!-- <a href="mailto:shivaniraichandani5@gmail.com">email</a>
+
+<a href="tel:1234567890">phone</a> -->
+
