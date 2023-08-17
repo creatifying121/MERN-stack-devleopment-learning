@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tags</title>
+</head>
+<body>
+    <!-- image embedding : lazy loading depicts that load the items only when necessary, in order to increase the performance of the website-->
+    <!-- <img src="./image.jpg" alt="an image" loading="lazy"> -->
+
+    <!-- audio files embedding: method 1 (using controls attribute is necessary, otherwise, audio cannot be rendered on the page) -->
+    <!-- <audio src="./audio.mp3" controls></audio> -->
+
+    <!-- audio: method 2 -->
+    <!-- <audio controls>
+        <source src="./audio.mp3">
+    </audio> -->
+
+    <!-- video embed: method 1 -->
+    <!-- <video src="./video.mp4" controls></video> -->
+
+    <!-- video embed: method 2 -->
+    <!-- <video controls>
+        <source src="./video.mp4">
+    </video> -->
+
+    <!-- iframe -->
+    <!-- <iframe src="../HTML Resume Project/index.html" width="500px" height="600px"></iframe> -->
+
+    <!-- embedding a map -->
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.2968723702857!2d77.34613269393029!3d23.264376650257688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c67972e88aaa7%3A0xef4e500be9dfb353!2sSant%20Hirdaram%20Girls%20College!5e0!3m2!1sen!2sin!4v1692271587214!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <!-- embedding a youtube video
+    https://www.youtube.com/watch?v=0oe7CF-TY_U
+
+    in the above original url, add embed/ on place of watch?v= before the video id, as this: https://www.youtube.com/embed/0oe7CF-TY_U
+    -->
+    <!-- <iframe src="https://www.youtube.com/embed/0oe7CF-TY_U" frameborder="0"></iframe> -->
+
+
+    <!-- project media tags -->
+    <div id="welcome">
+        <h1>WELCOME</h1>
+        <table>
+            <tr>
+                <td><img src="./image.jpg" alt="image" height="100px" width="100px"></td>
+                <td>
+                    <ul>
+                        <li><a href="#roadmap">Roadmap Video</a></li>
+                        <li><a href="#os">Operating System Video</a></li>
+                        <li><a href="#dbms">DBMS Video</a></li>
+                        <li><a href="#dsa">DSA Video</a></li>
+                        <li><a href="#webdev">Web Development Video</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="about">
+        <h2>About This Page</h2>
+        <p>This is a page, where I am going to add the media using media tags available in HTML.</p>
+    </div>
+
+    <div id="media-items">
+        <h2>Additional Media</h2>
+        <audio src="./audio.mp3" controls></audio>
+
+        <video src="./video.mp4" controls width="200px" height="200px"></video>
+    </div>
+
+    <div id="roadmap">
+        <h2>Roadmap Videos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam eligendi tempora corporis ratione debitis molestiae necessitatibus rerum inventore quisquam? Inventore eum necessitatibus consequuntur nihil vero quasi temporibus nostrum praesentium non perspiciatis ut, alias aliquid eligendi! Officiis maiores delectus aspernatur, voluptas facilis minima quos nobis autem sed excepturi rerum consectetur laborum ex, saepe laboriosam consequatur rem magnam placeat vero neque totam illum quasi reprehenderit. Qui eum aliquam id perferendis quidem?</p>
+
+        <iframe src="https://www.youtube.com/embed/Fn1wRGMYbL0" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/4ZFTCv8qfHU" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/NDMtMUCSwgc" width="400px" height="300px"></iframe>
+    </div>
+
+    <div id="os">
+        <h2>Operating System Videos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam eligendi tempora corporis ratione debitis molestiae necessitatibus rerum inventore quisquam? Inventore eum necessitatibus consequuntur nihil vero quasi temporibus nostrum praesentium non perspiciatis ut, alias aliquid eligendi! Officiis maiores delectus aspernatur, voluptas facilis minima quos nobis autem sed excepturi rerum consectetur laborum ex, saepe laboriosam consequatur rem magnam placeat vero neque totam illum quasi reprehenderit. Qui eum aliquam id perferendis quidem?</p>
+
+        <iframe src="https://www.youtube.com/embed/3obEP8eLsCw" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/8XBtAjKwCm4" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/nDXX6LIJx8A" width="400px" height="300px"></iframe>
+    </div>
+
+    <div id="dbms">
+        <h2>DBMS Videos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam eligendi tempora corporis ratione debitis molestiae necessitatibus rerum inventore quisquam? Inventore eum necessitatibus consequuntur nihil vero quasi temporibus nostrum praesentium non perspiciatis ut, alias aliquid eligendi! Officiis maiores delectus aspernatur, voluptas facilis minima quos nobis autem sed excepturi rerum consectetur laborum ex, saepe laboriosam consequatur rem magnam placeat vero neque totam illum quasi reprehenderit. Qui eum aliquam id perferendis quidem?</p>
+
+        <iframe src="https://www.youtube.com/embed/dl00fOOYLOM&t=2724s" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/D_wNQR3LeeM&t=25s" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/nweGaymEwGM&t=1s" width="400px" height="300px"></iframe>
+    </div>
+
+    <div id="dsa">
+        <h2>DSA Videos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam eligendi tempora corporis ratione debitis molestiae necessitatibus rerum inventore quisquam? Inventore eum necessitatibus consequuntur nihil vero quasi temporibus nostrum praesentium non perspiciatis ut, alias aliquid eligendi! Officiis maiores delectus aspernatur, voluptas facilis minima quos nobis autem sed excepturi rerum consectetur laborum ex, saepe laboriosam consequatur rem magnam placeat vero neque totam illum quasi reprehenderit. Qui eum aliquam id perferendis quidem?</p>
+
+        <iframe src="https://www.youtube.com/embed/6M7jpiWJUXs" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/Y8iSU_5keAg" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/RBSGKlAvoiM" width="400px" height="300px"></iframe>
+    </div>
+
+    <div id="webdev">
+        <h2>Web Development Videos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam eligendi tempora corporis ratione debitis molestiae necessitatibus rerum inventore quisquam? Inventore eum necessitatibus consequuntur nihil vero quasi temporibus nostrum praesentium non perspiciatis ut, alias aliquid eligendi! Officiis maiores delectus aspernatur, voluptas facilis minima quos nobis autem sed excepturi rerum consectetur laborum ex, saepe laboriosam consequatur rem magnam placeat vero neque totam illum quasi reprehenderit. Qui eum aliquam id perferendis quidem?</p>
+
+        <iframe src="https://www.youtube.com/embed/5RiZQoULuJ8" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/ZxKM3DCV2kE" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/8imJZHgf44E" width="400px" height="300px"></iframe>
+    </div>
+
+</body>
+</html>
