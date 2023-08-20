@@ -2,33 +2,55 @@
     background-color: brown;
 } */
 
-ol {
+/* ol {
     margin-left: -40px;
     margin-top: -20px;
     list-style-position: inside;
-  }
+  } */
   
 /* TODO 1: Set the CSS for all paragraph tags to "color: red" */
-p{
+/* p{
     color: red;
-}
+} */
 
 /* TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px" */
-.note{
+/* .note{
     font-size: 20px;
-}
+} */
 
 /* TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green" */
-#id-selector-demo{
+/* #id-selector-demo{
     color: green;
-}
+} */
 
 /* TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue" */
-li[value="4"]{
+/* li[value="4"]{
     color: blue;
-}
+} */
 
 /* TODO 5: Set all elements to have "text-align: center" */
-*{
+/* *{
     text-align: center;
+} */
+
+/* 6.0 color properties styling */
+/* 
+    1. make the background color of webpage "antiquewhite"
+    2. make h1 "whitesmoke"
+    3. make the background color of h1 "darkseagreen"
+    4. make the h2 #FAF8F1
+    5. make the background of the h2 "#C58940"
+*/
+*{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+
+h2{
+    color: #FAF8F1;
+    background-color: #C58940;
 }
