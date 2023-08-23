@@ -41,7 +41,7 @@
     4. make the h2 #FAF8F1
     5. make the background of the h2 "#C58940"
 */
-*{
+/* *{
     background-color: antiquewhite;
 }
 
@@ -53,4 +53,37 @@ h1{
 h2{
     color: #FAF8F1;
     background-color: #C58940;
-}
+} */
+
+/* to-do:
+        1. change the color of <p>color</p> to coral color
+        2. change the font size of <p>font size</p> to 2X the size of the root font size.
+        3. change the font weight of <p>font weight</p> to 900
+        4. change the font family of <p>font family</p> to the Google font Caveat with regular(400) font weignt.
+        5. change the <p>text align</p> to right aling.
+        6. change the root (html element) font size to 30px. 
+  */
+
+  #color{
+      color: coral;
+  }
+
+  #size{
+      font-size: 2rem;
+  }
+
+  #weight{
+      font-weight: 900;
+  }
+
+  #family{
+    font-family: 'Caveat', cursive;
+  }
+
+  #alignment{
+      text-align: right;
+  }
+
+  html{
+      font-size: 30px;
+  }
