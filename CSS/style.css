@@ -100,7 +100,7 @@ h2{
         8. set the third div to have a 10px border.
         9. set the margins for the divs so that each box corner touches the other.
   */
-
+/* 
   div{
       width: 200px;
       height: 200px;
@@ -127,4 +127,5 @@ h2{
     background-color: burlywood;
     border: 10px solid black;
     margin-left: 40px;
-  }
+  } */
+
