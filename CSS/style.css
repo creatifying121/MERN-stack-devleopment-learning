@@ -64,7 +64,7 @@ h2{
         6. change the root (html element) font size to 30px. 
   */
 
-  #color{
+  /* #color{
       color: coral;
   }
 
@@ -86,4 +86,45 @@ h2{
 
   html{
       font-size: 30px;
+  } */
+
+  /* 6.3 box model in CSS
+    to-do: 
+        1. create 3 boxes using the div element
+        2. set their sizes to 200px high by 200px wide.
+        3. set different background colors for each of the boxes 
+        4. add a paragraph element to first div element and add some content to it
+        5. set the first div to have 20px padding all around with a black 10px border
+        6. fix the style of <p> element to remove all margins.
+        7. set the second div to have a 20px border on top and bottom and 10px border on left and right.
+        8. set the third div to have a 10px border.
+        9. set the margins for the divs so that each box corner touches the other.
+  */
+
+  div{
+      width: 200px;
+      height: 200px;
+  }
+
+  p{
+      margin: 0;
+  }
+
+  #first{
+    background-color: aquamarine;
+    padding: 20px;
+    border: 10px solid black;
+  }
+
+  #second{
+    background-color: bisque;
+    border: solid black;
+    border-width: 20px 10px;
+    margin-left: 260px;
+  }
+
+  #third{
+    background-color: burlywood;
+    border: 10px solid black;
+    margin-left: 40px;
   }
