@@ -128,4 +128,114 @@ h2{
     border: 10px solid black;
     margin-left: 40px;
   } */
+/* cascade example */
+/* h1{
+    color: red;
+}
+h1{
+    color: green;
+} */
 
+/* cascade: postion and order example */
+/* .my-element{
+    background-color: green;
+    background-color: purple;
+}
+
+.my-element {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1rem + 3vw, 2rem);
+} */
+
+/* .my-element {
+    color: red;
+}
+  
+h1 {
+    color: blue;
+} */
+
+button {
+    color: red;
+  }
+  
+  .branding {
+    color: blue;
+  }
+
+  /* pseudo element selector */
+/* ::selection{
+    color: green;
+} */
+
+/* class selector */
+.my-class {
+    color: red;
+}
+
+/* pseudo-class selector */
+:hover {
+    color: red;
+}
+
+/* attribute selector */
+[href='#'] {
+    color: red;
+}
+
+/* extra example of specificity calculation */
+div:not(.my-class) {
+    color: red;
+}
+
+/* id selector */
+#id-name{
+    background-color: aliceblue;
+}
+
+/* important rule specificity */
+.my-class {
+    color: red !important; /* 10,000 points */
+    background: white; /* 10 points */
+}
+
+a.my-class.another-class[href]:hover {
+    color: lightgrey;
+}
+
+/* pragmatically increasing specificity */
+.my-button {
+    background: blue;
+  }
+  
+  button[onclick] {
+    background: grey;
+  }
+
+/* increasing specificity of first rule (line number207) */
+.my-button.my-button {
+    background: blue;
+  }
+  
+  button[onclick] {
+    background: grey;
+  }
+
+  /* rules having matching specificity */
+  .my-button {
+    background: blue;
+  }
+  
+  [onclick] {
+    background: grey;
+  }
+
+/* inheritance example */
+.my-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background: pink;
+    font: inherit;
+    text-align: center;
+  }
