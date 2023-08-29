@@ -239,3 +239,7 @@ a.my-class.another-class[href]:hover {
     font: inherit;
     text-align: center;
   }
+
+  article a {
+    color: maroon;
+  }
