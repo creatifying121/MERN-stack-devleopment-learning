@@ -155,13 +155,13 @@ h1 {
     color: blue;
 } */
 
-button {
+/* button {
     color: red;
   }
   
   .branding {
     color: blue;
-  }
+  } */
 
   /* pseudo element selector */
 /* ::selection{
@@ -169,69 +169,69 @@ button {
 } */
 
 /* class selector */
-.my-class {
+/* .my-class {
     color: red;
-}
+} */
 
 /* pseudo-class selector */
-:hover {
+/* :hover {
     color: red;
-}
+} */
 
 /* attribute selector */
-[href='#'] {
+/* [href='#'] {
     color: red;
-}
+} */
 
 /* extra example of specificity calculation */
-div:not(.my-class) {
+/* div:not(.my-class) {
     color: red;
-}
+} */
 
 /* id selector */
-#id-name{
+/* #id-name{
     background-color: aliceblue;
-}
+} */
 
 /* important rule specificity */
-.my-class {
-    color: red !important; /* 10,000 points */
-    background: white; /* 10 points */
-}
+/* .my-class { */
+    /*color: red !important;  10,000 points */
+    /*background: white;  10 points */
+/* } */
 
-a.my-class.another-class[href]:hover {
+/* a.my-class.another-class[href]:hover {
     color: lightgrey;
-}
+} */
 
 /* pragmatically increasing specificity */
-.my-button {
+/* .my-button {
     background: blue;
   }
   
   button[onclick] {
     background: grey;
-  }
+  } */
 
 /* increasing specificity of first rule (line number207) */
-.my-button.my-button {
+/* .my-button.my-button {
     background: blue;
   }
   
   button[onclick] {
     background: grey;
-  }
+  } */
 
   /* rules having matching specificity */
-  .my-button {
+  /* .my-button {
     background: blue;
   }
   
   [onclick] {
     background: grey;
-  }
+  } */
 
 /* inheritance example */
-.my-button {
+/* .my-button {
     display: inline-block;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -242,4 +242,89 @@ a.my-class.another-class[href]:hover {
 
   article a {
     color: maroon;
-  }
+  } */
+
+/* 7.0 exercise : the cascade - speicificty and inheritance */
+/* .box{
+    background-color: blue;
+    padding: 10px;
+}
+
+p{
+    color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.white-text{
+    color: white;
+}
+
+#outer-box{
+    background-color: purple;
+}
+
+.inner-box{
+    background-color: red;
+} */
+
+/* 7.1 exercise - combining css selectors */
+/* 1. grouping selectors: h1 and h2 should have bluevoilet color */
+/* h1, h2{
+    color: blueviolet;
+} */
+
+/* 2. applying child selector */
+/* div > p{
+    color: firebrick;
+} */
+
+/* .box > .done{
+    color: firebrick;
+} */
+
+/* .box > p {
+    color: firebrick ;
+} */
+
+/* 3. descendant selectors */
+/* div ul li{
+    color: blue;
+} */
+
+/* .box .list li{
+    color: blue;
+} */
+
+/* .box li{
+    color: blue;
+} */
+
+/* 4. chaining selectors */ 
+/* li.done{
+    color: seagreen;
+} */
+
+/* 5. combining the combiners */
+/* ul p.done{
+    font-size: 0.5rem;
+} */
+
+/* .red-circle{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+.blue-box{
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+} */
