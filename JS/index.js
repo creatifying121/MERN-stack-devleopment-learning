@@ -134,3 +134,49 @@
 // a();  // it will print 100
 // console.log(b);  // Reference Error: b is not defined
 
+
+// let and const
+// example 1
+// let a = 10;
+// var b = 100;
+// console.log(a);
+// console.log(b);
+
+// example 2
+// console.log(b);
+// console.log(a);
+// let a = 10;
+// var b = 100;
+
+// reference error examples
+// console.log(x); 
+// console.log(a);
+
+// let a = 100;
+
+//difference between let and const 
+// let a = 10; 
+// const b = 100;
+
+// no duplicate value for let
+// let a = 10;
+// let a = 100;
+
+// example 1 - initialization of const in different line
+// let a; 
+// const b;
+
+// a = 10;
+// b = 100;
+
+// console.log(a);
+// console.log(b);
+
+// example 2 - const reassignment
+// let a = 1; 
+// const b = 10;
+
+// b = 100;
+
+// console.log(a);
+// console.log(b);
