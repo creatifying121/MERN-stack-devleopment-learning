@@ -66,3 +66,71 @@
 
 
 // undefined vs. not defined
+// example 1
+// console.log(a); // undefined
+// var a = 10;
+
+// example 2 
+// var a;
+// console.log(a); // undefined
+
+//javascript is a loosely typed language
+// var a; 
+// console.log(a);  // undefined
+
+// a = 10; 
+// console.log(a);  // 10
+
+// a = "hello shivani";
+// console.log(a);  // hello shivani
+
+// never do this mistake
+// var a = undefined;
+
+
+// scope, scope chain and lexical environment
+// example 1
+// function a(){
+//     console.log(b);
+// } 
+// var b = 100; 
+// a();  // it will print 100
+
+// example 1
+// function a(){
+//     console.log(b);
+// } 
+// a();  // it will print undefined
+// var b = 100; 
+
+// example 2
+// function a(){
+//     c();
+//     function c() {
+//         console.log(b);
+//     }
+// } 
+// a();  // it will print undefined
+// var b = 100; 
+
+// example 2
+// function a(){
+//     c();
+//     function c() {
+//         console.log(b);
+//     }
+// } 
+// var b = 100; 
+// a();  // it will print 100
+
+// example 3
+// function a(){
+//     var b = 100; 
+//     c();
+//     function c() {
+//         console.log(b);
+//     }
+// } 
+// a();  // it will print 100
+// console.log(b);  // Reference Error: b is not defined
+
