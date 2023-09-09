@@ -1,0 +1,52 @@
+/* element selector */
+table{
+    border: 10px solid black;
+}
+
+/* class selector */
+.green{
+    color: green;
+}
+
+.blue{
+    color: blue;
+}
+
+.small {
+    font-size: small;
+}
+
+.large {
+    font-size: larger;
+}
+
+/* id selector */
+#first-button {
+    color: red;
+}
+
+/* pseudo class selector */
+#second-button:hover {
+    background-color: yellow;
+}
+
+/* multiple selector */
+h1, h2, h3, h4, h5, h6{
+    background-color: bisque;
+}
+
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nested selector */
+div>p {
+    color: teal;
+}
+
+/* attribute selector */
+a[href="#"] {
+    color: red;
+}
