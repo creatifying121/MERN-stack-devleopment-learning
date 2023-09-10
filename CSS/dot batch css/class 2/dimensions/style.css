@@ -1,0 +1,21 @@
+.max{
+    max-height: 100px;
+    border: 1px solid black;
+    background-color: burlywood;
+    /* the text which was flowing out of the box will now be able to scroll when overflow is set to scroll or auto */
+    overflow: scroll;
+    /* on setting overflow as hidden, then the text which was flowing out, then it will not be visible to us */
+    /* overflow: hidden; */
+    /* overflow value visible then overflow content is not clipped and may be visible outside the element's padding box. The element box is not a scroll container. This is the default value of the overflow property. */
+    /* overflow: visible; */
+}
+
+.min{
+    border: 1px solid black;
+    margin-top: 50px;
+    /* block height will auto adjust */
+    min-height: 100px;
+    /* block width remains same in case of max-width */
+    max-width: 200px;
+}
+
