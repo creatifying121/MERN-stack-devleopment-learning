@@ -1,0 +1,50 @@
+.box{
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    /* top to down */
+    /* background-image: linear-gradient(red, blue); */
+    /* left to right */
+    /* background-image: linear-gradient(to right, red, blue); */
+    /* right to left */
+    /* background-image: linear-gradient(to left, red, blue); */
+    /* top to bottom - default behavior */
+    /* background-image: linear-gradient(to bottom, red, blue); */
+    /* bottom to top */
+    /* background-image: linear-gradient(to top, red, blue); */
+    /* diagonal, towards bottom right */
+    /* background-image: linear-gradient(to bottom right, red, blue); */
+    /* towards top right */
+    /* background-image: linear-gradient(to top right, red, blue); */
+    /* towards top left */
+    /* background-image: linear-gradient(to top left, red, blue); */
+    /* towards bottom left */
+    /* background-image: linear-gradient(to bottom left, red, blue); */
+
+    /* trying vibgyor */
+    /* background-image: linear-gradient(to top right, violet, indigo, blue, green, yellow, orange, red); */
+
+    /* transparency */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,255,1));
+}
+
+.radial{
+    border: 1px solid black;
+    margin: 10px;
+    height: 300px;
+    width: 500px;
+    background-image: radial-gradient(circle, violet, indigo, blue, green, yellow, orange, red);
+}
+
+.tricolor{
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(orange, white, green);
+}
+
+/* homework - conic gradient */
+.conic{
+    width: 400px;
+    height: 300px;
+    background-image: conic-gradient(from 45deg, blue, red, green, yellow, white, orange);
+}
