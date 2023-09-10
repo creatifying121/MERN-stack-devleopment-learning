@@ -1,0 +1,28 @@
+h1{
+    /* text-shadow: width-of-shadow height-of-shadow blur-effect color-of-shadow */
+    text-shadow: 3px 3px 3px red;
+    /* multiple shadow */
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+    /* how to add border using text shadow */
+    color: white;
+    font-weight: bolder;
+    text-shadow: -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black, 1px 1px 0 black;
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    color: red;
+    /* box-shadow: horizontal-value(width) vertical-value(height) blur-effect color-of-shadow
+       if color of shadow is not specified by us, then it will take the color of the text present in the box
+    */
+    /* multiple shadow can be done same as text shadow */
+    box-shadow: 10px 10px 10px gray;
+    /* by adding negative values to horizontal and vertical value, we can change the direction of the shadow (by default it appears on bottom right */
+    box-shadow: 10px -10px 10px blue;
+    box-shadow: -10px 10px 10px blue;
+    box-shadow: -10px -10px 10px blue;
+    /* spread radius */
+    /* This is a fourth <length> value. Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink. If not specified, it will be 0 (the shadow will be the same size as the element) */
+    box-shadow: 10px 10px 0px 50px gray;
+}
