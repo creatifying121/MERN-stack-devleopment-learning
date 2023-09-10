@@ -1,10 +1,10 @@
 /* element selector */
-table{
+/* table{
     border: 10px solid black;
-}
+} */
 
 /* class selector */
-.green{
+/* .green{
     color: green;
 }
 
@@ -18,35 +18,142 @@ table{
 
 .large {
     font-size: larger;
-}
+} */
 
 /* id selector */
-#first-button {
+/* #first-button {
     color: red;
-}
+} */
 
 /* pseudo class selector */
-#second-button:hover {
+/* #second-button:hover {
     background-color: yellow;
-}
+} */
 
 /* multiple selector */
-h1, h2, h3, h4, h5, h6{
+/* h1, h2, h3, h4, h5, h6{
     background-color: bisque;
-}
+} */
 
 /* universal selector */
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* nested selector */
-div>p {
+/* div>p {
     color: teal;
-}
+} */
 
 /* attribute selector */
-a[href="#"] {
+/* a[href="#"] {
     color: red;
+} */
+
+/* more examples of attribute selector, just to keep in mind */
+/* <a> elements with an href containing "example" */
+/* a[href*="example"] {
+    font-size: 2em;
+} */
+  
+  /* <a> elements with an href ending ".org", case-insensitive */
+/* a[href$=".org" i] {
+    font-style: italic;
+} */
+  
+  /* <a> elements whose class attribute contains the word "logo" */
+/* a[class~="logo"] {
+    padding: 2px;
+} */
+
+/* box model */
+/* .box {
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* this will help us in keeping the box size same as we have given the width and height, but the content size will be reduced
+}
+
+#org {
+    background-color: orange;
+}
+
+#wht {
+    background-color: white;
+}
+
+#grn {
+    background-color: green;
+} */
+
+/* colors in css */
+/* ways to add colors are: hexadecimal colors, RGB colors, Predefined/Cross-browser color names, RGBA colors, HSL colors, HSLA colors (first three are commonly used ones) */
+/* #hex {
+    width: 100px;
+    height: 100px;
+    background-color: #F650AF;
+    border-radius: 50%;
+}
+#rgb {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(100, 250, 255);
+    border-radius: 50%;
+}
+#manual {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 50%;
+} */
+
+/* font in css */
+/* .font {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+} */
+
+/* overflow of text/content */
+/* #overflow {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+} */
+
+/* units in css */
+/* pixel is 1/96 of an inch */
+/* percentage unit */
+/* #div-one {
+    background-color: green;
+    width: 400px;
+    height: 100px;
+}
+#div-two {
+    background-color: beige;
+    width: 20%;
+    height: 30%;
+} */
+
+/* relative to font size */
+/* em is related to parent, if we haven't created parent, then body tag will be acting as one, and default font size for body tag is 16px */
+/* .em {
+    font-size: 4em;
+} */
+
+/* rem is related to root element (html tag) */
+/* .rem {
+    font-size: 5rem;
+} */
+
+/* relative to viewport (display area we have) */    
+/* vw (1/100 * width of viewport) and vh (1/100 * height of viewport)  */
+/* difference between 1% and 1vw: VW stands for “viewport width”, which is the viewable screen's width. 100VW would represent 100% of the viewport's width, or the full width of the screen. % reflects a percentage of the parent element's size, regardless of the viewport's size. */
+#first-para {
+    background-color: blanchedalmond;
+    width: 50vw;
+    height: 50vh;
 }
