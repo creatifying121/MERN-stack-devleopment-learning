@@ -1,0 +1,91 @@
+.static{
+    /* this is default position when we create any html element */
+    position: static;
+    border: 1px solid black;
+    width: 500px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+/* absolute position */
+.container{
+    position: relative;
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+    margin-top: 50px;
+}
+.one{
+    position: absolute;
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.two{
+    position: absolute;
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 200px;
+}
+.three{
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 500px;
+}
+.four{
+    position: absolute;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 200px;
+    left: 500px;
+}
+.five{
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 100px;
+    left: 250px;
+}
+
+/* sticky position */
+
+/* exercise */
+.exc{
+    border: 1px solid black;
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    background-color: bisque;
+}
+.top-left{
+    margin: 0;
+}
+.bottom-left{
+    position: relative;
+    top: 75%;
+}
+.top-right{
+    position: relative;
+    left: 90%;
+    top: -50%;
+}
+.bottom-right{
+    position: relative;
+    left: 90%;
+    top: 24%;
+}
+.center{
+    position: relative;
+    left: 42%;
+    top: 10%;
+}
