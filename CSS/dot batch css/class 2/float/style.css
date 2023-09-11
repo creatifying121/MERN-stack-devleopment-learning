@@ -1,0 +1,37 @@
+/* placing images in alternate float directions */
+/* #img1{
+    float: right; */
+    /* to make image visible on the left side, we can use float: left; */
+/* } */
+/* #img2{
+    float: left;
+} */
+
+
+/* placing images side by side */
+/* #img1, #img2{
+    float: right;
+} */
+
+/* placing images one after other by using clear property, it clears the float on either side we decide */
+/* #img1, #img2{
+    float: right;
+}
+#img2{
+    clear: right;
+} */
+
+
+/* the great collapse problem */
+.container{
+    border: 1px solid black;
+    overflow: auto;
+}
+.box1, .box2, .box3, .box4{
+    display: inline-block;
+    background-color: thistle;
+    width: 150px;
+    height: 150px;
+    border: 10px solid purple;
+    float: left; /* as soon as this property is applied, the parent div collapses into a single line, to avoid this problem we use overflow property in parent container (see above line number 28 */
+}
