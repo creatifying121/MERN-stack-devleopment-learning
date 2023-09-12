@@ -1,0 +1,93 @@
+/* ------------------------------------ flex properties (for parents) ------------------------------- */
+
+/* .container{
+    height: 400px;
+    border: 2px solid purple;
+    display: flex; */
+    /* by default the flex direction is row (main axis is the horizontal axis), we can change it using flex-direction property and by setting its value to column, so the main axis will be vertical this time */
+    /* flex-direction: column; */
+
+    /* flex-wrap : it will maintain the width provided by the developer, till it can, as soon a screen size is way more smaller, then it will auto adjust the width of the boxes. */
+    /* flex-wrap: wrap; */
+
+    /* flex-flow : it is a shorthand notation, where we can combine flex-direction and flex-wrap together, such as flex-flow: row wrap */
+    /* flex-flow: row wrap-reverse; */
+
+    /* justify-content : aligns items on the main-axis of the container */
+    /*justify-content: flex-start; /* all elements are stacked on the left side of the container */
+    /*justify-content: flex-end; /* all elements are stacked on the right side of the container */
+    /*justify-content: center; /* all elements are stacked on center of the container */
+    /*justify-content: space-between; /* items are evenly distributed the space, the first item is aligned to the start of container and last item to the end of container */
+    /*justify-content: space-around; /* space between all elements is equal, but for the first and last element, space before it and after it respectively is not the same */
+    /*justify-content: space-evenly; /* all elements have equal space distribution */
+    /* justify-content: center; */
+
+
+    /* align-items : align items help us aligning items over the cross axis */
+    /*align-items: flex-start; /* all elements are stacked to the start of the cross-axis */
+    /*align-items: flex-end; /* all elements are stacked to the end of the cross-axis */
+    /*align-items: center; /* all elements are stacked to the center of the cross-axis */
+    /*align-items: stretch; /* height of all elements is stretched along the cross-axis - this is the default value of align-items */
+    /*align-items: baseline; /* all elements are stacked to a single baseline, making it easier to make the same baseline for content having different sizes */
+    /* align-items: center; */
+
+
+    /* gap : when we want to have a space between the items, we use this property. it is a shorthand property/notation of row-gap and column-gap */
+    /* gap: 20px; */
+
+
+    /* align-content : this property applies where there are multiple lines of content, to handle the space between those lines, it has similar properties as in justify-content property */
+/* } */
+/* .box { */
+    /* border: 1px solid black; */
+    /* this width property will not be applied to the boxes, when we check for responsiveness, flex will adjust the sizes of the boxes as screen size reduces. to keep the width intact, we can use flex-wrap property */
+    /* width: 50px;
+    background-color: wheat;
+} */
+
+
+
+/* -------------------------- flex item properties (for children) --------------------------------------- */
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid purple;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* gap: 20px; */
+}
+.box{
+    /* width is not flexible, if content overflows then then it will be hidden  */
+    width: 150px;
+    /* to avoid this problem, we have flex-basis, whenever there is a situation of overflow, the width of the item will automatically increase, so that overflow does not occur. */
+    flex-basis: 50%; 
+    /* ek particular itme 50% width utha lega */
+    /* height: 100px; */
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+/* #box1{
+    order: 1;
+}
+#box2,#box4{
+    flex-grow: 1;
+}
+#box3{
+    flex-shrink: 4;
+} */
+/* align-self : for aligning a single flex item */
+/* #box1{
+    align-self: flex-start;
+}
+#box2,#box4{
+    align-self: flex-end;
+}
+#box3{
+    align-self: stretch;
+} */
