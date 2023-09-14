@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.white {
+    background-color: #f0d9b5;
+    width: 100px;
+    height: 100px;
+}
+.black {
+    background-color: #b58863;
+    width: 100px;
+    height: 100px;
+}

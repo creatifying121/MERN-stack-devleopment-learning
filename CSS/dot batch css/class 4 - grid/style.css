@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+/* .container {
     background-color: brown;
     height: 500px;
     border: 1px solid black;
@@ -14,4 +14,14 @@
     border: 2px solid black;
     width: 80px;
     height: 80px;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+p{
+    background-color: antiquewhite;
 }
