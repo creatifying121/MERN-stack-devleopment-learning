@@ -16,7 +16,8 @@
     height: 80px;
 } */
 
-.container{
+/* display : grid */
+/* .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -24,4 +25,7 @@
 }
 p{
     background-color: antiquewhite;
-}
+} */
+
+
+/* grid sizing */
