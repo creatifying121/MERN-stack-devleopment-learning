@@ -118,6 +118,7 @@ p{
   display: grid;
   grid-template-rows: 50px repeat(1, 1fr) 50px;
   grid-template-columns: 250px repeat(2, 1fr);
+  gap: 10px;
 }
 .box {
   background-color: whitesmoke;
