@@ -3,19 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .container {
-    background-color: brown;
-    height: 500px;
-    border: 1px solid black;
-    display: grid;
-}
-.box {
-    background-color: aqua;
-    border: 2px solid black;
-    width: 80px;
-    height: 80px;
-} */
 
+/* grid : udemy */
 /* display : grid */
 /* .container{
     display: grid;
@@ -33,16 +22,16 @@ p{
 
 /* grid placement */
 
-body {
+/* body {
     padding: 0;
     margin: 0;
   }
 
   .container {
     height: 100vh;
-    display: grid;
+    display: grid; */
     /* gap: 3rem; */
-    grid-template-columns: 1fr 1fr 1.5fr;
+    /* grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -58,9 +47,9 @@ body {
   }
 
   .cowboy {
-    background-color: #00bbff71;
+    background-color: #00bbff71; */
     /* grid-column: span 2; */
-    grid-area: 1/1/2/3;
+    /* grid-area: 1/1/2/3;
   }
 
   .astronaut {
@@ -70,8 +59,76 @@ body {
   }
 
   .book {
-    background-color: #e5823171;
+    background-color: #e5823171; */
     /* grid-row: span 2; */
     /* grid-area: row-start / col-start / row-end / col-end */
-    grid-area: 1/2/3/4;
-  }
+    /* grid-area: 1/2/3/4;
+  } */
+
+
+/* grid : dot batch */
+/* .container {
+    background-color: violet;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+} */
+    /* to add columns and rows we have following properties */
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 90px 90px 90px 90px; */
+
+    /* since these px dimensions are not responsive and will make us to add more media queries to make the pages responsive, so to overcome this, we have fraction dimension "fr" which allows us to specify what portion/fraction of page should be assigned to what and how it will be used. */
+    /* below 1fr 1fr 1fr will help us dividing page container into three equal sized columns */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* above statement can be written using repeat function, as below: */
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (4, 1fr); */
+
+    /* we can also use combinations like below */
+    /* grid-template-columns: 100px repeat(2, 1fr) 200px; */
+
+    /* for adding gap/space between columns and rows */
+    /* gap: 15px;
+}
+.box {
+    background-color: aqua;
+    border: 2px solid black; */
+    /* width: 80px;
+    height: 80px; */
+/* } */
+
+/* we want that box1 should be stretched such that it is taking space in two columns, so we can specify the column start and end property to tell where box can start and where it can end, so that it can stretch itself to desired position */
+/* #box1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+} */
+/* now we want a box to stretch itself to the rows below/above */
+/* #box3{
+  grid-row-start: 2;
+  grid-row-end: 6;
+} */
+
+
+/* designing a layout : header, sidebar, footer and main body */
+.container {
+  background-color: violet;
+  height: 100vh;
+  border: 5px solid purple;
+  display: grid;
+  grid-template-rows: 50px repeat(1, 1fr) 50px;
+  grid-template-columns: 250px repeat(2, 1fr);
+}
+.box {
+  background-color: whitesmoke;
+  color: gray;
+  border: 3px solid black;
+}
+#box1, #box4{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#box3{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
