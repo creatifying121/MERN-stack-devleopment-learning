@@ -111,7 +111,7 @@ p{
 
 
 /* designing a layout : header, sidebar, footer and main body */
-.container {
+/* .container {
   background-color: violet;
   height: 100vh;
   border: 5px solid purple;
@@ -132,4 +132,104 @@ p{
 #box3{
   grid-column-start: 2;
   grid-column-end: 4;
+} */
+
+/* grid area */
+/* .container {
+  height: 700px;
+  border: 1px solid red;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
 }
+.box{
+  border: 1px solid green;
+  background-color: aqua; */
+  /* height: 100px; width: 100px; */
+/* }
+#box1{ */
+  /* way one */
+  /* grid-column: span 3;
+  grid-row: span 3; */
+
+  /* way 2 */
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 3; */
+
+  /* way 3 grid-area: row-start / col-start / row-end / col-end */
+  /* grid-area: 1 / 1 / 3 / 4;
+} */
+
+/* grid-template-area: grid-template-area is the property used to name the rows and columns of a grid and to set its layout. */
+/* .container {
+  height: 700px;
+  border: 1px solid red;
+  background-color: yellow;
+  display: grid; */
+  /* grid-template-columns: 400px;
+  grid-template-rows: 30px 150px 400px 30px;
+  grid-template-areas: 
+  "hd"
+  "side"
+  "main"
+  "ft"
+  ; */
+
+  /* grid-template-columns: 200px 400px;
+  grid-template-rows: 30px 500px 30px;
+  grid-template-areas: 
+  "hd hd"
+  "side main"
+  "ft ft"
+  ; */
+
+  /* grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 50px 600px 50px;
+
+  grid-template-areas: 
+  "hd hd hd hd hd"
+  "side main main main main"
+  "ft ft ft ft ft"
+  ;
+}
+.box{
+  border: 1px solid green;
+  background-color: aqua;
+}
+#header{
+  grid-area: hd;
+}
+#footer{
+  grid-area: ft;
+}
+#sidebar{
+  grid-area: side;
+}
+#content{
+  grid-area: main;
+} */
+
+/* advanced grid concepts */
+/* fr: fraction unit for flexible/responsive grid */
+/* repeat function: this function allows us to create rows and columns which are repeatedly of same size. */
+/* grid-auto-rows: minmax() - automatically rows add hojati hain - when we have unknown number of rows, then we can use this grid-auto-rows property. example: in any social media app like linkedin, we don't know how much rows (post) are going to appear when we scroll, so in that type of case we can use grid-auto-rows.
+
+minmax() function specifies the minimum and maximum size of the rows that are auto generated
+*/
+/* .container {
+  height: 700px;
+  border: 1px solid red;
+  background-color: yellow;
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(4, 1fr);
+}
+.box{
+  border: 1px solid green;
+  background-color: aqua;
+} */
