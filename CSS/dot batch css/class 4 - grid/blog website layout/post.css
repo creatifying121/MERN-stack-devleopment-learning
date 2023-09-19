@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 3px solid purple;
+    background-color: violet;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft"
+    ;
+}
+.box{
+    border: 3px solid gray;
+    background-color: whitesmoke;
+}
+#header{
+    grid-area: hd;
+}
+#footer{
+    grid-area: ft;
+}
+#sidebar{
+    grid-area: side;
+}
+#content{
+    grid-area: main;
+}
