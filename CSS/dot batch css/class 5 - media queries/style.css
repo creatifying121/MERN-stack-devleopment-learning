@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 3px solid purple;
+    background-color: violet;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    grid-template-areas: 
+    "hd hd"
+    "side main"
+    "ft ft"
+    ;
+}
+.box{
+    border: 3px solid gray;
+    background-color: whitesmoke;
+}
+#header{
+    grid-area: hd;
+}
+#footer{
+    grid-area: ft;
+}
+#sidebar{
+    grid-area: side;
+}
+#content{
+    grid-area: main;
+}
+
+/* media queries */
+/* jaise hi 400px se chota size hojayega screen ka to ye properties apply hogi */
+/* @media(max-width: 400px){ 
+    .container{
+        gap: 20px;
+    }
+} */
+
+
+@media(max-width: 500px){
+    .container{
+        grid-template-rows: 50px 1fr 1fr 50px;
+        grid-template-columns: 1fr;
+        gap: 3px;
+        grid-template-areas: 
+        "hd"
+        "side"
+        "main"
+        "ft"
+        ;
+    }
+}
+
+/* multiple conditions */
+/* below conditions will be handling the css for screen sizes between 400 and 800px */
+/* @media(min-width: 400px) and (max-width: 800px){
+    => my css rules
+} */
