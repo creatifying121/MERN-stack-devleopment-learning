@@ -36,13 +36,21 @@
     align-items: stretch; */
 
     /* place items : short hand for justify-items and align-items */
+    /* place-items: center; */
+
+    /* place-content: short hand for justify-content and align-content */
+    /* place-content: center; */
+
+    /* item vs content: while talking about content, it will not affect the width and height of the content, while when we talk about item, then it will effect the width and height of the box (it will be applied to the content inside the box, and not on the box).
+    
+    self: when we talk about justify self and align self, then they will work on a single box in number of boxes. */
 }
 .box{
     border: 3px solid red;
     background-color: aqua;
 }
 
-#box1{
+/* #box1{ */
     /* justify self: child item ka content kaise place hoga uske baare mein baat krenge */
     /* justify-self: start;
     justify-self: end;
@@ -58,4 +66,10 @@
     align-self: center;
     align-self: stretch;
     align-self: baseline; */
-}
+/* } */
+
+/* h.w.
+   complex grid layout
+   nesting and overlapping grid items
+   create a layout where you will be using grid and flex both
+*/
