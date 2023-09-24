@@ -21,6 +21,5 @@ function searchMovie(){
         return data.json()
     }).then((data)=>{
         title.innerText = data.Title
-        date.innerText = 
     })
 }
