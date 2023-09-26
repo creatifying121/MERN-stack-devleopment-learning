@@ -1,0 +1,13 @@
+/* functions in css
+   we have seen following functions before:
+   rgb(), rgba(), repeat(), scale(), trnaslate(), minmax(), gradient(), etc.
+*/
+
+/* calc() function */
+/* if we create a layout, where we want margin left to be 10% and top to be 5%. this function can use operators like +,-,* and / and we can provide values accordingly
+
+width: calc(100% -50px)
+height: min(50%, 400px)
+
+minmax() => we used this with grid, property grid-auto-rows (when we don't know how many rows can be there on a page) so whenever new rows will be created, they will be assigned a size of minmax(min_height, max_height)
+*/
