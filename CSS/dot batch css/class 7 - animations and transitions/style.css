@@ -100,20 +100,46 @@ minmax() => we used this with grid, property grid-auto-rows (when we don't know 
 
 .container{
     width: 500px; height: 155px;
-    background-color: green;
+    background-color: bisque;
     border: 2px solid red;
 }
 .box{
     width: 150px;
     height: 150px;
-    background-color: bisque;
+    background-color: orange;
     border: 2px solid peru;
 
     animation-name: shivani;
     animation-duration: 3s;
-    animation-iteration-count: 5;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    /* animation-direction: normal; */
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    /* animation-delay: 1s; */
+    /* animation-direction: alternate; */
+    animation-fill-mode: both;
 }
 /* animation ki starting ending end-between ki state btani ho to uske liye keyframes ka use krte hain */
+/* @keyframes shivani {
+    from{
+        width: 212px;
+    }    
+    to{
+        width: 100%;
+    }
+} */
+
+@keyframes shivani {
+    /* adding multiple breakpoints on the basis of % completion of animation */
+    /* on 0% of animation */
+    0%{
+        width: 150px;
+        background-color: orange;
+    }
+    50%{
+        width: 50%;
+        background-color: white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
