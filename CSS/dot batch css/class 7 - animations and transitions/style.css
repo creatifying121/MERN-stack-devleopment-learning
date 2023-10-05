@@ -11,3 +11,109 @@ height: min(50%, 400px)
 
 minmax() => we used this with grid, property grid-auto-rows (when we don't know how many rows can be there on a page) so whenever new rows will be created, they will be assigned a size of minmax(min_height, max_height)
 */
+
+/* variables */
+/* let's say we created a website, and we want to put some blocks in red color and its color code is #01245f and everytime we are writing this color code for every block, so what if we create a variable such that red = #01245f and use red every time we need that color. so this will help us reduce the redundancy */
+/* :root{
+    --magenta: #982198;
+}
+
+*{
+    --white: #fff;
+} */
+/* .container{
+   border: 1px solid brown; */
+   /* background-color: red; */
+   /* height: 300px;
+   width: 300px;  */
+
+   /* let's try using --magenta variable in this style */
+   /* background-color: var(--magenta); */
+    /* background-color: var(--white); */
+   /* we can see that we cannot use magenta color here. because it has its scope limited to box class only. if we want to use it in whole document then we can define it as global variable i the :root */
+/* } */
+/* .box{ */
+    /* border: 2px solid green; */
+    /* background-color: aqua; */
+    /* background-color: var(--white); */
+    /* color: #982198; */
+
+    /* variable creation (syntax: "--variable-name" */
+    /* --magenta: #982198; */
+    /* color: var(--magenta);
+} */
+
+/* .container{
+    width: 500px; height: 500px;
+    background-color: green;
+    border: 2px solid red;
+    display: flex;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: bisque;
+    border: 2px solid peru; */
+
+    /* transition: 2s; */
+
+    /* 
+    
+    transition property: this is a css property which helps developers to tell, on what css property like background color, width, etc. we are going to apply the transition.
+    
+    it has these values - all, none, calc() and var()
+    
+    */
+    /* transition-property: background-color;  */
+    /* this property states that, on background color, we are applying the transition */
+
+    /* transition-property: all;  */
+    /* this is not considered a good practice, because using "all" hampers the performance of the website */
+
+    /* transition-delay: 5s; */
+
+    /* shorthand for transition
+       1. property : kispr transition use krna chahte hain
+       2. duration : kitne time mein transition horha hoga
+       3. transition timing function : ease in, ease out, etc. kaisa wala transition apply horha hoga
+       4. transition delay : kitni der ke baad transition dikh rha hoga
+    */
+    /* transition: background-color 1s ease 3s; */
+    /* transition: transform 1s ease 3s; */
+    /* transition: transform 5s ease 1s; */
+    /* transition: transform 3s ease-in-out; */
+    /* transition: transform 3s ease ; */
+
+    /* above shorthand can be written as */
+    /* transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0, 0.88, 0, 0.92);
+    transition-delay: 1s; */
+/* }
+.box:hover{ */
+    /* background-color: red; */
+    /* transform: rotate(45deg); */
+    /* transform: translateX(500px); */
+    /* transform: translateX(500px) rotate(360deg) scale(2.0);
+} */
+
+.container{
+    width: 500px; height: 155px;
+    background-color: green;
+    border: 2px solid red;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    border: 2px solid peru;
+
+    animation-name: shivani;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-direction: normal; */
+}
+/* animation ki starting ending end-between ki state btani ho to uske liye keyframes ka use krte hain */
