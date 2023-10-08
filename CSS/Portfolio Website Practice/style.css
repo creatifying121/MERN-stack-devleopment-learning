@@ -20,10 +20,8 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
 }
 
 /* navbar styling start */
@@ -79,9 +77,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto;
-    padding: 0 1rem;
+    margin: 3rem auto;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 8rem;
+    height: 80vh;
     gap: 5rem;
 }
 .hero-section .faded-text{
@@ -90,7 +91,7 @@ a{
     font-size: 7rem;
     color: var(--faded-text-color);
     bottom: -16%;
-    left: -5%;
+    left: -0.01%;
     font-weight: bold;
     transition: all 3s;
     position: absolute;
@@ -266,3 +267,166 @@ a{
 /* icons animation end */
 
 /* hero section end */
+
+/* project section start */
+
+.project-section{
+    background-color: rgb(231,231,231);
+    padding-top: 3rem;
+}
+
+.project-section .project-header{
+    text-align: center;
+}
+
+.project-section .project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+
+.project-container .project-card{
+    width: 90%;
+    height: 55rem;
+    background-color: #afafaf;
+    background-image: url('../images/projects/Project1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 4rem #1f1f1f;
+    position: relative;
+}
+
+.project-container #project-2{
+    background-image: url('../images/projects/Project2.png');
+}
+
+.project-container #project-3{
+    background-image: url('../images/projects/Project3.png');
+}
+
+.project-container #project-4{
+    background-image: url('../images/projects/Project4.png');
+}
+
+.project-card:nth-child(even){
+    align-self: flex-end;
+}
+
+.project-card::before{
+    content: "";
+    background: #1f1f1f9a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.project-card::after{
+    content: "";
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 2;
+} 
+
+.project-card:hover::after{
+    transform: scaleX(1);
+}
+
+
+.project-card .project-content{
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 3.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: all 0.4s;
+    /* max-width: 55%; */
+}
+
+.project-card:hover > .project-content{
+    scale: 1.1;
+}
+
+.project-card:nth-child(odd) .project-content{
+    left: 10%;
+}
+
+.project-card:nth-child(even) .project-content{
+    right: 10%;
+}
+
+.project-content .project-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 60%;
+}
+
+.project-content .project-skills-container img{
+    width: 4rem;
+}
+
+.project-content h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.project-content p{
+    font-size: 1.6rem;
+    font-style: italic;
+    max-width: 70%;
+}
+
+.project-content .project-buttons{
+    display:flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.project-buttons .icons{
+    font-size: 4rem;
+    color: var(--clr-white);
+    transition: all 0.4s;
+}
+
+.project-buttons .icons:hover{
+    color: var(--clr-orange);
+}
+
+.project-card .project-number{
+    font-size: 20rem;
+    font-weight: 600;
+    color: var(--clr-white);
+    position: absolute;
+    right: -4rem;
+    top: -4.5rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.project-card:hover .project-number{
+    opacity: 1;
+}
+
+.project-card:nth-child(even) .project-number{
+    left: -4rem;
+    top: -4.5rem;
+}
+
+/* project section end */
