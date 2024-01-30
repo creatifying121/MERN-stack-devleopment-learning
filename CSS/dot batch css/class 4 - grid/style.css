@@ -111,7 +111,7 @@ p{
 
 
 /* designing a layout : header, sidebar, footer and main body */
-/* .container {
+.container {
   background-color: violet;
   height: 100vh;
   border: 5px solid purple;
@@ -132,7 +132,7 @@ p{
 #box3{
   grid-column-start: 2;
   grid-column-end: 4;
-} */
+}
 
 /* grid area */
 /* .container {
