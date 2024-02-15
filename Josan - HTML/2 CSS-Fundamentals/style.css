@@ -1,0 +1,172 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  /* text styling */
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* descendant selector: all p elements which are inside the footer element will be selected and hence the styles will be applied accordingly */
+/* footer p {
+  font-size: 16px;
+} */
+
+/* here we only wanted to style the "laura jones" text, but somehow "test para" takes up this style. so this is not a robust way, hence we can use nested decendant selector by adding article before header p, so it will make it more specific */
+/* article header p {
+  font-style: italic;
+} */
+
+/* id selector */
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-size: bold;
+}
+
+.related-list {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* pseudo classes */
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* above way can be used, but we can do it better using the pseudo class */
+
+/* this first-child pseudo class will select all the li elements which are the first child of their parent (ul or ol) */
+li:first-child {
+  font-weight: bold;
+}
+
+/* this last-child pseudo class will select all the li elements which occur in last inside their parent. */
+li:last-child {
+  font-style: italic;
+}
+
+/* we can also choose a particular child using nth-child(num_of_child_you_want_to_select) pseudo class */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* misconception - this won't work */
+article p:first-child {
+  color: red;
+}
+
+/* styling hyperlinks */
+
+/* remember to apply these pseudo classes in this order only, link, visited, hover and active (LVHA) */
+
+/* this :link pseudo class will only select the anchor elements which have "href" attribute in them */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* :visited pseudo class will change the color of the links which are visited before */
+a:visited {
+  color: #1098ad;
+}
+
+/* :hover pseudo class will help us add style to the anchor element which we want to display everytime when the link is hovered using a mouse */
+a:hover {
+  color: orangered;
+  text-decoration: underline dotted orangered;
+  font-weight: bold;
+}
+
+/* :active pseudo class will help us adding styles when we actually click on the link */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* conflicting css rules: we may have a situation where an element has id and multiple classes. and the similar styles are applied on each of these things, so following will be the hierarchy (lowest priority to highest priority)
+
+0. universal selector (*)
+1. element selector (multiple)
+2. class(.) or pseudo class(:) selector (multiple)
+3. id(#) selector (multiple)
+4. inline css 
+5. !important
+
+***for those where (multiple) is written, so if there will be multiple rules for them, then last one will be applied
+
+see this in the example below:
+*/
+/* id will be applied on priority */
+/* #copyright {
+  color: red;
+} */
+
+/* if id is commented, then .text style will apply as it is declared lastly */
+/* .copyright {
+  color: green;
+}
+
+.text {
+  color: blue;
+} */
+
+/* if none of above are applied, element selector will work here */
+/* since this element selector has the lowest priority, so if we declare it important, then it will be applied above all other css rules, but this is just a hack, not a good practice to use. */
+/* footer p {
+  color: yellow !important;
+} */
