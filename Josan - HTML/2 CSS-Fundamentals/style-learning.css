@@ -1,17 +1,59 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* doing a global reset using the universal selector. we define margin: 0 and padding: 0 in universal selector because these are not the properties that are related to text, and therefore it is not a property that will get inherited from parent to child elements. instead, if we want to apply margins and paddings to each single element then we can use universal selector
+
+and these margin and padding can be easily overridden by other elements' properties. 
+
+universal selector has a specificity of zero
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
   color: #444;
+  border-top: 10px solid #1098ad;
+}
+
+/* centering a page in the browser: we need a container here with a specific width acc to which we can center our content */
+.container {
+  width: 700px;
+  margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
   color: #1098ad;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: top&bottom right&left */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  /* adding dimensions */
+  width: 500px;
 }
 
 h1 {
@@ -23,10 +65,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -38,10 +83,23 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* for the last list item, we do not want the margin to be applied */
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* descendant selector: all p elements which are inside the footer element will be selected and hence the styles will be applied accordingly */
@@ -71,16 +129,6 @@ li {
 
 .related-list {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* pseudo classes */
@@ -138,6 +186,12 @@ a:active {
   font-style: italic;
 }
 
+/* height: auto will only be applied if we have set some dimentions in the html, otherwise it will not work and we have to provide dimensions here in css */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
 /* conflicting css rules: we may have a situation where an element has id and multiple classes. and the similar styles are applied on each of these things, so following will be the hierarchy (lowest priority to highest priority)
 
 0. universal selector (*)
@@ -170,3 +224,6 @@ see this in the example below:
 /* footer p {
   color: yellow !important;
 } */
+
+/* IMPORTANT NOTE */
+/* Phenomena of Collpasing margins: when we have two margins occupying the same space, then only one of them is actually visible on the page, which is usually the larger one. */

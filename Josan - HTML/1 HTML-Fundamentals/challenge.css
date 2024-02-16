@@ -25,12 +25,14 @@ article {
   font-size: 12px;
 }
 
-.more {
+.more:link,
+.more:visited {
   color: black;
   font-weight: 500;
 }
 
-.more:hover {
+.more:hover,
+.more:active {
   text-decoration: none;
 }
 
