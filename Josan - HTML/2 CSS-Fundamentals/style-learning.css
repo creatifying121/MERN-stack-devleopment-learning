@@ -13,12 +13,15 @@ body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
+
+  position: relative;
 }
 
 /* centering a page in the browser: we need a container here with a specific width acc to which we can center our content */
 .container {
   width: 700px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 h1,
@@ -32,7 +35,7 @@ h3 {
   /* padding: top&bottom right&left */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .post-header {
@@ -56,6 +59,48 @@ aside {
   width: 500px;
 }
 
+/* ABSOLUTE POSITION EXAMPLE */
+.like {
+  padding: 20px;
+  font-size: 22px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* PSEUDO ELEMENT EXAMPLE */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* p::first-line {
+  color: red;
+} */
+
+/* ADJACENT ELEMENT SELECTOR / ADJACENT SIBLING SELECTOR */
+/* in this example we only want to select the p element which are adjacent siblings of h3 element */
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* after and before pseudo elements */
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
 h1 {
   /* text styling */
   font-size: 26px;
@@ -66,6 +111,8 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  /* background-color: orange; */
+  position: relative;
 }
 
 h3 {
@@ -227,3 +274,41 @@ see this in the example below:
 
 /* IMPORTANT NOTE */
 /* Phenomena of Collpasing margins: when we have two margins occupying the same space, then only one of them is actually visible on the page, which is usually the larger one. */
+
+/* we cannot apply height and width to inline elements and also paddings and margins are applied on the left and right of inline element only. this is the fundamental difference between inline and block elements */
+
+/* inline-block elements behaves like inline elements from outside and as block elements from inside. this means that, inline-block elements take up the space as required and do not cause any line break, but we can also apply margin and paddings veritcally too, and box model will apply as it will be shown */
+
+/* we have two positioning modes (normal flow which can be achieved using position: relative; and absolute positioning which can be achieved using position: absolute;) 
+
+using absolute position, we can position the element anywhere on the page, that element will not be in the normal flow, hence also called "out of flow"
+
+absolute position has no impact on the surrounding elements, and it can easily overlap other elements
+
+we use top, bottom, right or left to absolutely position the elements from its "RELATIVELY POSITIONED CONTAINER"
+*/
+
+/* PSEUDO ELEMENTS: these elements do not exist in the html but we can still select and style in CSS. one of the common example is the first letter of the paragraph element.
+
+BY DEFAULT ANY PSEUDO ELEMENT IS AN INLINE ELEMENT
+*/
+
+/* Adjacent sibling is the element which comes just after other element, for example- 
+
+<h3>hey heading h3</h3>
+<p>hey para</p>
+
+so here in this example p is the adjacent sibling of h3
+
+Another example: 
+<h3>hey heading h3</h3>
+<p>hey para</p>
+<p>hey para 2</p>
+
+so in this example, the "p" with content "hey para" is the adjacent sibling , not one with the content "hey para 2"
+*/
+
+/* AFTER AND BEFORE PSEUDO ELEMENTS
+
+the after pseudo element creates a pseudo element that will automatically be the very first child of the selected element. This can be very useful when we don't want to necesserily add a new element to the HTML.
+*/
