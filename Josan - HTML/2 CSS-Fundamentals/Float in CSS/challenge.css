@@ -26,6 +26,7 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
   margin-top: 10px;
+  float: left;
 }
 
 .shipping {
@@ -33,7 +34,8 @@ body {
   color: #777;
   font-weight: bold;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  float: right;
 }
 
 .more:link,
@@ -54,7 +56,9 @@ body {
 }
 
 .prod-desc {
+  padding-top: 20px;
   margin-bottom: 15px;
+  clear: both;
 }
 
 .list {
@@ -82,7 +86,7 @@ li:last-child {
   cursor: pointer;
   padding: 15px;
 
-  margin-top: 15px;
+  /* margin-top: 15px; */
   width: 100%;
 }
 
@@ -111,7 +115,7 @@ li:last-child {
   width: 22px;
   height: 22px;
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-right: 10px;
 }
 
@@ -137,4 +141,22 @@ li:last-child {
 
 .six {
   background-color: brown;
+}
+
+/* adding floats */
+.container-one,
+.container-two {
+  float: left;
+  padding-left: 40px;
+}
+
+.image {
+  float: left;
+}
+
+.container-one {
+  width: 280px;
+}
+.container-two {
+  width: 260px;
 }
