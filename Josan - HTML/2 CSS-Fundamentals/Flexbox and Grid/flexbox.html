@@ -36,7 +36,7 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
@@ -45,6 +45,28 @@
         align-items: center;
         /* justify content property works on main axis (horizontal axis by default) */
         justify-content: flex-start;
+      }
+
+      .el {
+        /* defaults: commented ones are the default values of flex-grow, flex-shrink and flex-basis */
+        /* flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1; */
+
+        /* when we want to size the flex items and in particular with a width, so we don't use the width property, instead we use flex-basis */
+        /* each flex item will take up this widhth, but the elements which have more content, will extend the width we defined through flex-basis */
+        /* flex-basis: 100px; */
+
+        /* flex-grow allows items to grow or not if there's any extra space left in the container */
+        /* the remaining space is distributed among the elements evenly */
+        /* flex-grow: 1; */
+
+        /* flex-shrink is opposite of flex-grow */
+        /* flex-shrink: 1; */
+
+        /* shorthand of flex-grow, flex-shrink and flex-basis */
+        /* flex: flex-grow flex-shrink flex-basis */
+        flex: 0 1 200px;
       }
 
       /* when we want to align a single element differently than in the container, so we use align-self property */
