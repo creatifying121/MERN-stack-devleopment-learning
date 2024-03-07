@@ -40,6 +40,23 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        /* align items work on cross axis (vertical axis by default) */
+        align-items: center;
+        /* justify content property works on main axis (horizontal axis by default) */
+        justify-content: flex-start;
+      }
+
+      /* when we want to align a single element differently than in the container, so we use align-self property */
+      .el--1 {
+        align-self: flex-start;
+      }
+      .el--5 {
+        align-self: stretch;
+      }
+      /* when we want to change the default order of elements and want them to be placed in order we want, then we can use negative values(<= -1) to place items in start while positive values (>=1) to place items in end */
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
