@@ -24,9 +24,9 @@ body {
 
 .price {
   font-size: 24px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  float: left;
+  /* margin-bottom: 10px; */
+  /* margin-top: 10px; */
+  /* float: left; */
 }
 
 .shipping {
@@ -34,8 +34,8 @@ body {
   color: #777;
   font-weight: bold;
   font-size: 12px;
-  margin-top: 18px;
-  float: right;
+  /* margin-top: 18px; */
+  /* float: right; */
 }
 
 .more:link,
@@ -56,7 +56,7 @@ body {
 }
 
 .prod-desc {
-  padding-top: 20px;
+  margin-top: 15px;
   margin-bottom: 15px;
   clear: both;
 }
@@ -115,7 +115,7 @@ li:last-child {
   width: 22px;
   height: 22px;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: 10px;
 }
 
@@ -144,7 +144,7 @@ li:last-child {
 }
 
 /* adding floats */
-.container-one,
+/* .container-one,
 .container-two {
   float: left;
   padding-left: 40px;
@@ -159,4 +159,22 @@ li:last-child {
 }
 .container-two {
   width: 260px;
+} */
+
+/* ------------------------------------------------------------------------------ */
+/* adding flexbox */
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.container-one {
+  flex-basis: 280px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
