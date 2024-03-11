@@ -69,12 +69,26 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        gap: 50px;
+
+        /* aligning tracks inside container - this only makes sense when grid container is actually bigger than the gid itself. */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        /* aligning items inside the grid cells - moving items around inside the cells */
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
