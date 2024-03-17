@@ -4,9 +4,29 @@
   box-sizing: border-box;
 }
 
+html {
+  /* we want default font size to be 10px */
+  /* but if we hard code it, then if user will try to increase or decrease the browser's font size, user won't be able to do so */
+  /* thus we will calculate a percentage, using which we can make the font size flexible */
+  /* 10px / 16px (default root font size) => 0.625 * 100% => 62.5% */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: rebeccapurple;
+}
+
+.hero-img {
+  width: 100%;
 }
