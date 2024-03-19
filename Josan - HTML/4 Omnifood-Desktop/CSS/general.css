@@ -45,7 +45,7 @@
   border-radius: 9px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -106,4 +106,32 @@
 
 .grid--center-v {
   align-items: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border: transparent;
+}
+
+.center-text {
+  text-align: center;
 }
