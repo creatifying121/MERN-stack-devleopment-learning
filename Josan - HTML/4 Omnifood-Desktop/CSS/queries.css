@@ -1,1 +1,69 @@
+/* rem and em do not depend upon html font size in media queries. instead, 1rem = 1em = 16px */
 
+/* SMALL LAPTOPS -> below 1344px */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LANDSCAPE TABLETS -> below 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* TABLETS -> below 940px */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+}
