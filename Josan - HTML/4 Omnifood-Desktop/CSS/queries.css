@@ -98,13 +98,40 @@
     left: 0;
     width: 100%;
     height: 100vh;
+
+    transform: translateX(100%);
+
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease-in;
 
     /* hide the navigation */
+    opacity: 0;
+
+    /* make it unaccessbile to mouse and keyboards */
+    pointer-events: none;
+
+    /* hide it from screen readers */
     visibility: hidden;
   }
+
+  .nav-open .main-nav {
+    opacity: 1;
+
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
