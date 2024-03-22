@@ -13,6 +13,13 @@
 
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/queries.css" />
+
+    <script src="./JS/script.js" defer></script>
+
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -27,7 +34,7 @@
             <a href="#testimonials" class="main-nav-link">Testimonials</a>
           </li>
           <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -53,10 +60,10 @@
               nutritional needs.
             </p>
 
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
 
             <!-- customer photos -->
             <div class="delivered-meals">
@@ -581,7 +588,7 @@
     </main>
 
     <!-- CTA SECTION -->
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -668,7 +675,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2024 by Omnifood Inc. All rights reserved.
+            Copyright &copy; <span class="year">2028</span> by Omnifood Inc. All
+            rights reserved.
           </p>
         </div>
 
